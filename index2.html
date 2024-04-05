@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stars</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style2.css">
+<style>
+    #audioButton {
+    background-color:rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    width: 100%; /* Tombol memenuhi lebar layar */
+    height: 100%; /* Tombol memenuhi tinggi layar */
+    position: fixed; /* Tombol tetap di posisi layar */
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #audioButton:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <div id="audioButtonContainer">
+    <button id="audioButton">
+  </div>
+  <audio id="audioPlayer" src="bgm.mp3"></audio>
+<!-- partial:index.partial.html -->
+<div class="background-container">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="details">
+<p style="margin-top: px;">"As the moon graces the sky with its gentle glow, I want to wish you a serene good night, beautiful.</p>
+<p style="margin-top: 60px;">
+  Your presence has been a source of joy and warmth, and as you embrace the realm of dreams, 
+  </p>
+<p style="margin-top: 100px;">know that you carry the radiance of a thousand stars. May the night unfold peacefully around you, </p>
+<p style="margin-top: 140px;">cradling you in its comforting embrace. Sleep well, beautiful, and may tomorrow bring you even more reasons to smile.</p>
+<p style="margin-top: 175px;">Sweet Dreams"</p>
+</div>
+<script src="audio.js"></script>
+<!-- partial -->
+  
+</body>
+</html>
